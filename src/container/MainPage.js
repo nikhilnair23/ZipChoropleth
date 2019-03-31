@@ -4,9 +4,10 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import {withRouter} from 'react-router-dom'
 
 import { scaleThreshold } from 'd3-scale'
+import {schemePurples} from 'd3-scale-chromatic'
 import ZipDetails from "../components/ZipDetails";
 
-const colorScale = scaleThreshold().domain([5,10,20,30]).range(["#75739F", "#5EAFC6", "#41A368", "#93C464"])
+const colorScale = scaleThreshold().domain([250,500,750,1000,1250,1500,1750,2000]).range(schemePurples[9])
 
 class MainPage extends Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class MainPage extends Component {
     }
 
     onResize() {
+        debugger;
         this.setState({ screenWidth: window.innerWidth, screenHeight: window.innerHeight - 120 })
     }
 

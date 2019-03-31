@@ -5,6 +5,7 @@ export default {
         "properties": {
             "OBJECTID": 1,
             "ZIP5": "02134",
+            "ESTAB": 537,
             "ShapeSTArea": 37219357.27709961,
             "ShapeSTLength": 40794.182395976655
         },
@@ -17,6 +18,7 @@ export default {
         "properties": {
             "OBJECTID": 2,
             "ZIP5": "02125",
+            "ESTAB": 456,
             "ShapeSTArea": 64760516.6159668,
             "ShapeSTLength": 62224.52143996796
         },
@@ -29,6 +31,7 @@ export default {
         "properties": {
             "OBJECTID": 3,
             "ZIP5": "02110",
+            "ESTAB": 1850,
             "ShapeSTArea": 6637283.754394531,
             "ShapeSTLength": 18358.213495683904
         },
@@ -41,6 +44,7 @@ export default {
         "properties": {
             "OBJECTID": 4,
             "ZIP5": "02118",
+            "ESTAB": 809,
             "ShapeSTArea": 31161577.073486328,
             "ShapeSTLength": 32353.40761759965
         },
@@ -53,6 +57,7 @@ export default {
         "properties": {
             "OBJECTID": 5,
             "ZIP5": "02126",
+            "ESTAB": 206,
             "ShapeSTArea": 60785850.310302734,
             "ShapeSTLength": 45488.394711325454
         },
@@ -65,6 +70,7 @@ export default {
         "properties": {
             "OBJECTID": 6,
             "ZIP5": "02109",
+            "ESTAB": 1376,
             "ShapeSTArea": 5536731.439208984,
             "ShapeSTLength": 22538.30584175739
         },
@@ -77,6 +83,7 @@ export default {
         "properties": {
             "OBJECTID": 7,
             "ZIP5": "02021",
+            "ESTAB": 189,
             "ShapeSTArea": 2361.905029296875,
             "ShapeSTLength": 432.1947022346507
         },
@@ -89,6 +96,7 @@ export default {
         "properties": {
             "OBJECTID": 8,
             "ZIP5": "02113",
+            "ESTAB": 185,
             "ShapeSTArea": 2807327.8525390625,
             "ShapeSTLength": 8507.459971040667
         },
@@ -101,6 +109,7 @@ export default {
         "properties": {
             "OBJECTID": 9,
             "ZIP5": "02130",
+            "ESTAB": 664,
             "ShapeSTArea": 105221153.02392578,
             "ShapeSTLength": 64225.02221021176
         },
@@ -113,6 +122,7 @@ export default {
         "properties": {
             "OBJECTID": 10,
             "ZIP5": "02121",
+            "ESTAB": 189,
             "ShapeSTArea": 48905922.2434082,
             "ShapeSTLength": 35217.581923282436
         },
@@ -125,6 +135,7 @@ export default {
         "properties": {
             "OBJECTID": 11,
             "ZIP5": "02119",
+            "ESTAB": 453,
             "ShapeSTArea": 44511498.52441406,
             "ShapeSTLength": 37680.70209935455
         },
@@ -137,6 +148,7 @@ export default {
         "properties": {
             "OBJECTID": 12,
             "ZIP5": "02115",
+            "ESTAB": 603,
             "ShapeSTArea": 19771296.033935547,
             "ShapeSTLength": 34806.584021867326
         },
@@ -149,6 +161,7 @@ export default {
         "properties": {
             "OBJECTID": 13,
             "ZIP5": "02163",
+            "ESTAB": 29,
             "ShapeSTArea": 3271313.2407226562,
             "ShapeSTLength": 7298.781943210537
         },
@@ -161,6 +174,7 @@ export default {
         "properties": {
             "OBJECTID": 14,
             "ZIP5": "02135",
+            "ESTAB": 688,
             "ShapeSTArea": 78620825.92480469,
             "ShapeSTLength": 61170.630938014285
         },
@@ -173,6 +187,7 @@ export default {
         "properties": {
             "OBJECTID": 15,
             "ZIP5": "02199",
+            "ESTAB": 252,
             "ShapeSTArea": 1603177.3635253906,
             "ShapeSTLength": 5140.73082166639
         },
@@ -185,6 +200,7 @@ export default {
         "properties": {
             "OBJECTID": 16,
             "ZIP5": "02459",
+            "ESTAB": 722,
             "ShapeSTArea": 24832.756469726562,
             "ShapeSTLength": 9295.15063852394
         },
@@ -197,6 +213,7 @@ export default {
         "properties": {
             "OBJECTID": 17,
             "ZIP5": "02124",
+            "ESTAB": 570,
             "ShapeSTArea": 85658048.0522461,
             "ShapeSTLength": 57673.007747016236
         },
@@ -209,6 +226,7 @@ export default {
         "properties": {
             "OBJECTID": 18,
             "ZIP5": "02132",
+            "ESTAB": 521,
             "ShapeSTArea": 129360685.4597168,
             "ShapeSTLength": 68024.57171040218
         },
@@ -221,6 +239,7 @@ export default {
         "properties": {
             "OBJECTID": 19,
             "ZIP5": "02114",
+            "ESTAB": 691,
             "ShapeSTArea": 12538634.208251953,
             "ShapeSTLength": 27934.53142113685
         },
@@ -233,6 +252,7 @@ export default {
         "properties": {
             "OBJECTID": 20,
             "ZIP5": "02108",
+            "ESTAB": 1158,
             "ShapeSTArea": 6162153.076416016,
             "ShapeSTLength": 18485.04012922881
         },
@@ -245,6 +265,7 @@ export default {
         "properties": {
             "OBJECTID": 21,
             "ZIP5": "02136",
+            "ESTAB": 454,
             "ShapeSTArea": 128128953.25976562,
             "ShapeSTLength": 65353.7578293903
         },
@@ -257,6 +278,7 @@ export default {
         "properties": {
             "OBJECTID": 22,
             "ZIP5": "02111",
+            "ESTAB": 1003,
             "ShapeSTArea": 7823799.346191406,
             "ShapeSTLength": 13814.879494079047
         },
@@ -269,6 +291,7 @@ export default {
         "properties": {
             "OBJECTID": 23,
             "ZIP5": "02210",
+            "ESTAB": 991,
             "ShapeSTArea": 32373210.07080078,
             "ShapeSTLength": 36215.56401831652
         },
@@ -281,6 +304,7 @@ export default {
         "properties": {
             "OBJECTID": 24,
             "ZIP5": "02116",
+            "ESTAB": 2069,
             "ShapeSTArea": 19117646.169921875,
             "ShapeSTLength": 23262.912272931015
         },
@@ -293,6 +317,7 @@ export default {
         "properties": {
             "OBJECTID": 25,
             "ZIP5": "02131",
+            "ESTAB": 425,
             "ShapeSTArea": 81688796.49902344,
             "ShapeSTLength": 68311.54512162019
         },
@@ -305,6 +330,7 @@ export default {
         "properties": {
             "OBJECTID": 26,
             "ZIP5": "02127",
+            "ESTAB": 676,
             "ShapeSTArea": 67536142.7421875,
             "ShapeSTLength": 51905.25163530369
         },
@@ -317,6 +343,7 @@ export default {
         "properties": {
             "OBJECTID": 27,
             "ZIP5": "02120",
+            "ESTAB": 176,
             "ShapeSTArea": 17329493.55102539,
             "ShapeSTLength": 28148.2999058812
         },
@@ -329,6 +356,7 @@ export default {
         "properties": {
             "OBJECTID": 28,
             "ZIP5": "02203",
+            "ESTAB": 14,
             "ShapeSTArea": 864466.751953125,
             "ShapeSTLength": 4052.846084454221
         },
@@ -341,6 +369,7 @@ export default {
         "properties": {
             "OBJECTID": 29,
             "ZIP5": "02215",
+            "ESTAB": 575,
             "ShapeSTArea": 25198308.002685547,
             "ShapeSTLength": 37861.73130534532
         },
@@ -353,6 +382,7 @@ export default {
         "properties": {
             "OBJECTID": 30,
             "ZIP5": "02129",
+            "ESTAB": 492,
             "ShapeSTArea": 42249762.5300293,
             "ShapeSTLength": 38078.0954538402
         },
@@ -365,6 +395,7 @@ export default {
         "properties": {
             "OBJECTID": 31,
             "ZIP5": "02128",
+            "ESTAB": 775,
             "ShapeSTArea": 147802204.05444336,
             "ShapeSTLength": 82747.6903234676
         },
@@ -377,6 +408,7 @@ export default {
         "properties": {
             "OBJECTID": 32,
             "ZIP5": "02122",
+            "ESTAB": 543,
             "ShapeSTArea": 61086361.34326172,
             "ShapeSTLength": 74811.18400811615
         },
@@ -389,6 +421,7 @@ export default {
         "properties": {
             "OBJECTID": 33,
             "ZIP5": "02151",
+            "ESTAB": 809,
             "ShapeSTArea": 8707547.791015625,
             "ShapeSTLength": 24981.904795047416
         },
@@ -401,6 +434,7 @@ export default {
         "properties": {
             "OBJECTID": 34,
             "ZIP5": "02186",
+            "ESTAB": 446,
             "ShapeSTArea": 99.52197265625,
             "ShapeSTLength": 96.8672454922593
         },
@@ -413,6 +447,7 @@ export default {
         "properties": {
             "OBJECTID": 35,
             "ZIP5": "02026",
+            "ESTAB": 921,
             "ShapeSTArea": 19174.030151367188,
             "ShapeSTLength": 4025.1907719865612
         },
@@ -425,6 +460,7 @@ export default {
         "properties": {
             "OBJECTID": 36,
             "ZIP5": "02152",
+            "ESTAB": 268,
             "ShapeSTArea": 8873432.587158203,
             "ShapeSTLength": 15553.441602573632
         },
@@ -437,6 +473,7 @@ export default {
         "properties": {
             "OBJECTID": 37,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 5696.389892578125,
             "ShapeSTLength": 2897.4804511019456
         },
@@ -449,6 +486,7 @@ export default {
         "properties": {
             "OBJECTID": 38,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 181.837646484375,
             "ShapeSTLength": 229.30571735846806
         },
@@ -461,6 +499,7 @@ export default {
         "properties": {
             "OBJECTID": 39,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 2806999.962036133,
             "ShapeSTLength": 10562.69322776033
         },
@@ -473,6 +512,7 @@ export default {
         "properties": {
             "OBJECTID": 40,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 1282571.0212402344,
             "ShapeSTLength": 7052.5047260385645
         },
@@ -485,6 +525,7 @@ export default {
         "properties": {
             "OBJECTID": 41,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 8825573.507202148,
             "ShapeSTLength": 21844.883434503034
         },
@@ -497,6 +538,7 @@ export default {
         "properties": {
             "OBJECTID": 42,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 4467229.036621094,
             "ShapeSTLength": 11198.562891929278
         },
@@ -509,6 +551,7 @@ export default {
         "properties": {
             "OBJECTID": 43,
             "ZIP5": "02467",
+            "ESTAB": 518,
             "ShapeSTArea": 5059.77197265625,
             "ShapeSTLength": 975.8331206701462
         },
