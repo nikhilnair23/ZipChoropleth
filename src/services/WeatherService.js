@@ -5,12 +5,10 @@ var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
 class WeatherService extends Component{
     findWeatherForZip(zipCode){
         let url2 = url + zipCode;
-        debugger;
         return(fetch(proxyUrl + url2,{
         })
                 .then(blob => blob.json())
                 .then(data => {
-                    debugger;
                     return data;
                 })
         )

@@ -33,13 +33,11 @@ class MainPage extends Component {
 
     render() {
         return (
-            <div className="container-fluid bg-secondary">
-                <div className="container-fluid text-center"><h2>Map of Boston</h2></div>
+            <div className="container-fluid ">
                 <Router>
                     <div className="row">
-                        <div className="col-3"/>
-                        <div className="col-6">
-                        <div className="container-fluid">
+                        <div className="col-2"/>
+                        <div className="col-8 container-fluid">
                             <Route path="/"
                                    exact
                                    render={() => <WorldMap
@@ -48,8 +46,7 @@ class MainPage extends Component {
                                    />}/>
                             <Route exact path={"/details/:zip"} component={ZipDetails}/>
                         </div>
-                        </div>
-                        <div className="col-3"/>
+                        <div className="col-2"/>
                     </div>
                 </Router>
             </div>

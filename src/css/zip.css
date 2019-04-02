@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+
+.zip-bg {
+    background-image: linear-gradient(to right, #89b7ff, deepskyblue);
+    height: inherit;
+}
+
+.zip-height {
+    height: inherit;
+}
+
+.zip-night {
+    background-image: linear-gradient(to left, #041fff, #001b25);
+}
+
+.zip-img {
+    height: 70px;
+    width: 70px;
+}
+
+.zip-header {
+    font-family: Helvetica;
+    font-weight: bolder;
+    text-decoration-color: #041fff;
+    font-palette: normal;
+    color: blueviolet;
+}
+
+.zip-temp {
+    font-family: Arial;
+    font-weight: bolder;
+    color: white;
+    font-size: x-large;
+    position: relative;
+    left: -100px;
+    top: 20px;
+}
+
+.card {
+    min-width: 400px;
+}
