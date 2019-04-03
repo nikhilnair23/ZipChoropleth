@@ -1,43 +1,146 @@
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 .zip-bg {
-    background-image: linear-gradient(to right, #89b7ff, deepskyblue);
+    background: url("../img/MapBackground.jpeg");
     height: inherit;
+    background-size: 100%;
 }
 
 .zip-height {
     height: inherit;
+    width: inherit;
 }
 
 .zip-night {
-    background-image: linear-gradient(to left, #041fff, #001b25);
+    background: url("../img/Boston_night.jpg");
+    background-size: 100%;
+}
+
+.zip-day {
+    background: url("../img/boston_day.jpg");
+    background-size: 100%;
+}
+
+.zip-card-night {
+    background-image: linear-gradient(to left, #0f0d58, #001b25);
+}
+
+.zip-card-day {
+    background-image: linear-gradient(to right, #fffd8c, #feff00);
+    opacity: .1;
 }
 
 .zip-img {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 90px;
 }
 
 .zip-header {
-    font-family: Helvetica;
+    font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
     text-decoration-color: #041fff;
     font-palette: normal;
     color: blueviolet;
 }
 
+.zip-detail-title-day{
+    position: relative;
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bolder;
+    right : 30px;
+}
+
+.zip-detail-title-night{
+    position: relative;
+    font-family: "Arial";
+    font-weight: bolder;
+    right : 30px;
+    color: #ffe500;
+}
+
 .zip-temp {
-    font-family: Arial;
+    font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
     color: white;
-    font-size: x-large;
-    position: relative;
-    left: -100px;
-    top: 20px;
+    font-size: 28px;
+    padding-right: 0px;
+}
+
+.zip-temp-high{
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bolder;
+    color: white;
+    font-size: medium;
+}
+
+.zip-temp-low {
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bolder;
+    color: white;
+    font-size: medium;
+}
+
+.zip-weather-card{
+    display: flex;
+    position : relative;
+    right: 30px;
 }
 
 .card {
     min-width: 400px;
+    max-width: 400px;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+.card-header {
+    border-radius: 0px;
+}
+
+.zip-legend{
+    position:relative;
+    top: 50px;
+    right : 180px
+}
+
+.map-container{
+    padding-left: 200px;
+}
+
+.zip-weather-font{
+    font-family: "Arial Rounded MT Bold";
+    color: #041fff;
+}
+
+.zip-back-btn{
+    position: absolute;
+    top: 170px;
+    left: 90px;
+    color: #ffb300;
+}
+
+.zip-legend-text{
+    margin-bottom: 0px;
+}
+.zip-col-1{
+    width : 50px
+}
+
+
+@media (max-width: 787px) {
+    .zip-legend-vertical {
+        display: none;
+    }
+    .zip-height{
+        height: 94%
+    }
+}
+
+@media (min-width: 787px) {
+    .zip-legend-horizontal {
+        display: none;
+    }
 }

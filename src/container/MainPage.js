@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import WorldMap from "../components/WorldMap";
+import WorldMap from "../components/CityMap";
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import {withRouter} from 'react-router-dom'
 
@@ -14,7 +14,7 @@ class MainPage extends Component {
         super(props);
         this.onResize = this.onResize.bind(this)
         this.onHover = this.onHover.bind(this)
-        this.state = {screenWidth: 1000, screenHeight: 500, hover: "none", brushExtent: [0, 40]}
+        this.state = {screenWidth: 1000, screenHeight: 500, hover: "none"}
     }
 
     onResize() {
@@ -33,20 +33,17 @@ class MainPage extends Component {
 
     render() {
         return (
-            <div className="container-fluid ">
+            <div className="zip-height">
                 <Router>
-                    <div className="row">
-                        <div className="col-2"/>
-                        <div className="col-8 container-fluid">
-                            <Route path="/"
-                                   exact
-                                   render={() => <WorldMap
-                                       hoverElement={this.state.hover} onHover={this.onHover} colorScale={colorScale}
-                                       size={[this.state.screenWidth / 2, this.state.screenHeight / 2]}
-                                   />}/>
-                            <Route exact path={"/details/:zip"} component={ZipDetails}/>
-                        </div>
-                        <div className="col-2"/>
+                    <div className="zip-height">
+                        <Route path="/"
+                               exact
+                               render={() => <WorldMap
+                                   hoverElement={this.state.hover} onHover={this.onHover} colorScale={colorScale}
+                                   width = {this.state.screenWidth * 0.6}
+                                   height= {this.state.screenHeight * 0.95}
+                               />}/>
+                        <Route exact path={"/details/:zip"} component={ZipDetails}/>
                     </div>
                 </Router>
             </div>
