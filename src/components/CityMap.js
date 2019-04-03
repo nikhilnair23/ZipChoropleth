@@ -7,6 +7,7 @@ import {LegendThreshold} from 'react-d3-legends';
 import WeatherService from "../services/WeatherService";
 import {Spinner} from 'spin.js';
 import "../css/spin.css"
+import ToolTip from "./ToolTip";
 
 let opts = {
     lines: 13, // The number of lines to draw
@@ -33,8 +34,29 @@ class CityMap extends Component {
     constructor(props) {
         super(props);
         this.weatherService = new WeatherService();
-
+        this.state = {
+            tooltip: false,
+            zipCode: '',
+            X: '',
+            Y: ''
+        }
     }
+
+    enableToolTip = (event,zipCode) => {
+        this.setState({
+            tooltip: true,
+            X: event.screenX,
+            Y: event.screenY,
+            zipCode : zipCode
+        })
+    }
+
+    disableToolTip = () => {
+        this.setState({
+            tooltip: false
+        })
+    }
+
 
     redirect = (zipCode) => {
         let target = document.getElementById('map');
@@ -48,7 +70,7 @@ class CityMap extends Component {
                     zip: info.observations.location[0].observation[0],
                     city: info.observations.location[0].observation[0].city,
                     state: info.observations.location[0].observation[0].state,
-                    zipCode : zipCode
+                    zipCode: zipCode
                 }
             });
         })
@@ -59,7 +81,7 @@ class CityMap extends Component {
         /*109000*/
         const projection = geoMercator()
             .scale(109000)
-            .center([-71.12603188298199, 42.27158985153841 -0.01])
+            .center([-71.12603188298199, 42.27158985153841 - 0.01])
             .translate([140, 375])
         const pathGenerator = geoPath().projection(projection)
         const city = zip.features
@@ -69,8 +91,12 @@ class CityMap extends Component {
                         key={"path" + i}
                         onClick={() => this.redirect(d.properties.ZIP5)}
                         d={pathGenerator(d)}
-                        onMouseEnter={() => {
-                            this.props.onHover(d)
+                        onMouseEnter={(event) => {
+                            this.enableToolTip(event,d.properties.ZIP5);
+                            this.props.onHover(d);
+                        }}
+                        onMouseLeave={() => {
+                            this.disableToolTip();
                         }}
                         style={{
                             fill: this.props.hoverElement === d.properties.OBJECTID ?
@@ -83,43 +109,55 @@ class CityMap extends Component {
             })
 
         return (
-            <div className="zip-height">
-                    <h2 className="text-center pt-4">Zip Choropleth Of Boston</h2>
-            <div className="row zip-height">
-                <div className=" col-lg-2 col-xl-3 d-none d-sm-block d-none d-md-block"/>
-                <div className="col-8 col-md-8 col-lg-6 col-xl-5 zip-height">
-                    <div id="map" className="zip-height">
-                        <div className="zip-height" ref={"child"}>
-                           {/* 500 500*/}
-                        <svg width={620} height={this.props.height}>
-                            <g>
-                                {city}
-                            </g>
-                        </svg>
+            <div className="zip-height zip-bg">
+                <div>
+                    <h2 className="text-center zip-map-header pt-4">Zip Choropleth Of Boston</h2>
+                </div>
+                <div className="row zip-height">
+                    <div className=" col-lg-2 col-xl-3 col-sm-1 col-md-2"/>
+                    <div className="col-8 col-md-7 col-lg-6 col-xl-5 zip-height">
+                            {this.state.tooltip &&
+                            <ToolTip
+                                X = {this.state.X}
+                                Y = {this.state.Y}
+                                zipCode= {this.state.zipCode}
+                            />
+                            }
+                        <div id="map" className="zip-height">
+                            <div className="zip-height" ref={"child"}>
+                                {/* 500 500*/}
+                                <svg width={620} height={this.props.height}>
+                                    <g>
+                                        {city}
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-4 col-xl-4 zip-legend-vertical">
-                    <div className="mt-5 ">
-                    <p className="text-black font-weight-bolder mb-0">Number of Establishments</p>
-                    <LegendThreshold
-                        scale={this.props.colorScale}
-                        direction="column"
-                        labelMargin="0 15px 0 0"
-                        shape={"rect"}
-                    />
+                    <div className="col-4 col-md-3 col-lg-4 col-xl-4 zip-legend-vertical">
+                        <div className="mt-5 ">
+                            <p className="text-black font-weight-bolder mb-0">Number of Establishments</p>
+                            <LegendThreshold
+                                scale={this.props.colorScale}
+                                direction="column"
+                                labelMargin="0 15px 0 0"
+                                shape={"rect"}
+                            />
+                        </div>
                     </div>
+                    <div className="zip-legend-horizontal">
+                        <p className="text-black font-weight-bolder zip-legend-text">Number of Establishments</p>
+                        <div className ="pl-4 pr-2">
+                        <LegendThreshold
+                            scale={this.props.colorScale}
+                            direction="horizontal"
+                            labelMargin="0 10px 0 0"
+                            shape={"rect"}
+                        />
+                        </div>
+                    </div>
+
                 </div>
-                <div className="">
-                    <p className="text-black font-weight-bolder zip-legend-text">Number of Establishments</p>
-                    <LegendThreshold
-                        scale={this.props.colorScale}
-                        direction="horizontal"
-                        labelMargin="0 15px 0 0"
-                        shape={"rect"}
-                    />
-                </div>
-            </div>
 
             </div>
         )

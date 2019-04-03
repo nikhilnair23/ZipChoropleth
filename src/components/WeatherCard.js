@@ -8,37 +8,44 @@ const WeatherCard = ({zip}) => {
             <div className={"card-header" }>
                 <h3 className="card-header text-center zip-header">Weather</h3>
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-3">
                     <img className="img zip-img" src={zip.iconLink}/>
                     </div>
-                    <div className="col-4">
-                        <p className="zip-temp pt-3">{zip.temperature} °C </p>
+                    <div className="col-5">
+                        <p className={"pt-3 text-center "+ (zip.daylight === 'N' ? 'zip-temp-night' : 'zip-temp-day')}>
+                            {zip.temperature} °C
+                        </p>
                     </div>
-                    <div className="col-4 text-justify">
-                        <p className="zip-temp-high">HI : {zip.highTemperature} °C </p>
-                        <p className="zip-temp-low">LO : {zip.lowTemperature} °C </p>
+                    <div className={"col-4 text-justify " + (zip.daylight === 'N' ? 'zip-weather-night' : 'zip-weather-day') }>
+                        <p>
+                            HI : {zip.highTemperature} °C
+                        </p>
+                        <p>
+                            LO : {zip.lowTemperature} °C
+                        </p>
                     </div>
                 </div>
                 <div>
-                    <table className="table table-borderless zip-weather-font">
+                    <table className={"table table-borderless " +
+                    (zip.daylight === 'N' ? 'zip-night-color' : 'zip-day-color')}>
                         <tr>
-                            <td>Real Feel</td>
+                            <td className="col1">Real Feel</td>
                             <td>{zip.comfort}°C</td>
                         </tr>
                         <tr>
-                            <td className="zip-col-1">Current conditions</td>
+                            <td className="col1">Current conditions</td>
                             <td>{zip.description}</td>
                         </tr>
                         <tr>
-                            <td>Humidity</td>
+                            <td className="col1">Humidity</td>
                             <td>{zip.humidity}%</td>
                         </tr>
                         <tr>
-                            <td>Wind Speed</td>
+                            <td className="col1">Wind Speed</td>
                             <td>{zip.windSpeed} miles/hr</td>
                         </tr>
                         <tr>
-                            <td>Wind Direction</td>
+                            <td className="col1">Wind Direction</td>
                             <td>{zip.windDesc}</td>
                         </tr>
                     </table>

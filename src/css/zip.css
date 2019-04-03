@@ -5,24 +5,51 @@ html, body {
 
 .zip-bg {
     background: url("../img/MapBackground.jpeg");
+    background-repeat: no-repeat;
     height: inherit;
-    background-size: 100%;
-}
-
-.zip-height {
-    height: inherit;
-    width: inherit;
+    background-size: cover;
 }
 
 .zip-night {
     background: url("../img/Boston_night.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .zip-day {
     background: url("../img/boston_day.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.zip-map-header{
+    color: rgba(255, 94, 0, 0.99);
+    font-family: "Helvetica Neue";
+    font-size: 40px;
+    text-shadow: #feff00;
+    font-weight: bolder;
+}
+
+.zip-height {
+    height: inherit;
+    width: inherit;
+    z-index: 5;
+}
+
+.zip-tooltip {
+    z-index: 100;
+}
+
+.zip-tooltip-text{
+    background-color: #ffe500;
+    opacity: .9;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
 
 .zip-card-night {
     background-image: linear-gradient(to left, #0f0d58, #001b25);
@@ -39,47 +66,76 @@ html, body {
 }
 
 .zip-header {
-    font-family: "Arial Rounded MT Bold";
-    font-weight: bolder;
-    text-decoration-color: #041fff;
-    font-palette: normal;
-    color: blueviolet;
+    font-family: "Arial Unicode MS";
+    font-weight: 900;
+    color: #2a1fe2;
 }
 
 .zip-detail-title-day{
     position: relative;
     font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
-    right : 30px;
+    right : 39px;
+    color: #0f0d58;
 }
 
 .zip-detail-title-night{
     position: relative;
     font-family: "Arial";
     font-weight: bolder;
-    right : 30px;
+    right : 39px;
     color: #ffe500;
 }
 
-.zip-temp {
+.zip-weather-day{
+    font-family: "Arial Unicode MS";
+    font-weight: bolder;
+    font-size: medium;
+    color: #0f0d58;
+}
+
+.zip-weather-night{
+    font-family: "Arial Unicode MS";
+    font-weight: bolder;
+    font-size: medium;
+    color: #ffe500;
+}
+
+.zip-day-color {
+    font-family: "Arial Rounded MT Bold";
+    color: #0038ff;
+}
+
+.zip-night-color{
+    font-family: "Arial Rounded MT Bold";
+    color: #d7ff31;
+}
+
+.zip-temp-day {
     font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
-    color: white;
-    font-size: 28px;
+    font-size: 25px;
     padding-right: 0px;
+    color: black;
+}
+
+.zip-temp-night {
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bolder;
+    font-size: 25px;
+    padding-right: 0px;
+    color: white;
 }
 
 .zip-temp-high{
     font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
-    color: white;
     font-size: medium;
 }
 
 .zip-temp-low {
     font-family: "Arial Rounded MT Bold";
     font-weight: bolder;
-    color: white;
     font-size: medium;
 }
 
@@ -115,28 +171,43 @@ html, body {
     color: #041fff;
 }
 
-.zip-back-btn{
-    position: absolute;
-    top: 170px;
-    left: 90px;
+.zip-back-btn-pos{
+    position: relative;
+    top: 35%;
+
+}
+
+.zip-back-btn-col{
     color: #ffb300;
 }
 
 .zip-legend-text{
     margin-bottom: 0px;
+    padding-left: 30px;
 }
 .zip-col-1{
-    width : 50px
+    min-width : 300px
 }
 
+td.col1 {
+    min-width: 178px;
+}
+
+.zip-legend-horizontal{
+    position: relative;
+    bottom: 200px;
+}
 
 @media (max-width: 787px) {
     .zip-legend-vertical {
         display: none;
     }
-    .zip-height{
-        height: 94%
+    .zip-placeholder {
+        display: none;
     }
+    /*.zip-height{
+        height: 94%
+    }*/
 }
 
 @media (min-width: 787px) {

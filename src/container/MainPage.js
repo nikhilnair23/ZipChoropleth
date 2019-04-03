@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import WorldMap from "../components/CityMap";
+import CityMap from "../components/CityMap";
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import {withRouter} from 'react-router-dom'
 
@@ -38,7 +38,7 @@ class MainPage extends Component {
                     <div className="zip-height">
                         <Route path="/"
                                exact
-                               render={() => <WorldMap
+                               render={() => <CityMap
                                    hoverElement={this.state.hover} onHover={this.onHover} colorScale={colorScale}
                                    width = {this.state.screenWidth * 0.6}
                                    height= {this.state.screenHeight * 0.95}
