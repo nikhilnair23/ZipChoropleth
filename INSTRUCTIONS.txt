@@ -1,0 +1,8 @@
+To run this application:
+1. If you do not have npm installed, please install it.
+2. Download the zip file of this project and extract it.
+3. Navigate to the folder on your terminal
+4. When you are in the root of the project run the command "npm install" to ensure that you have all the dependencies
+5. After this you may run "npm start" to run the application and it should open in your browser at localhost:3000/
+6. If you do not want to download the application and set it up you can also view the application 
+   at : https://zip-choropleth.herokuapp.com/ where I have deployed the project
