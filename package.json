@@ -16,7 +16,7 @@
     "d3-transition": "^1.2.0",
     "font-awesome": "^4.7.0",
     "react": "^16.8.6",
-    "react-d3-legends": "git+https://git@github.com/nikhilnair23/react-d3-legends",
+    "react-d3-legends": "https://github.com/nikhilnair23/react-d3-legends/tarball/master",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
