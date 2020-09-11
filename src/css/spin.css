@@ -24,3 +24,8 @@
         opacity: 1;
     }
 }
+
+.zip-height svg{
+    position: relative;
+    top: 12%;
+}

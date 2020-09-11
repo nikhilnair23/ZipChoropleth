@@ -40,7 +40,7 @@ class MainPage extends Component {
                                exact
                                render={() => <CityMap
                                    hoverElement={this.state.hover} onHover={this.onHover} colorScale={colorScale}
-                                   width = {this.state.screenWidth * 0.6}
+                                   width = {this.state.screenWidth * 0.8}
                                    height= {this.state.screenHeight * 0.95}
                                />}/>
                         <Route exact path={"/details/:zip"} component={ZipDetails}/>

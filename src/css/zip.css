@@ -3,12 +3,32 @@ html, body {
     overflow: hidden;
 }
 
-.zip-bg {
-    background: url("../img/MapBackground.jpeg");
+body {
+    //background: linear-gradient(-45deg, #0044ce, #6e6b67);
+    background: rgba(0, 3, 55, 0.9);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*.zip-bg {
+    background: url("../img/cool_boston.jpg");
+    background: rgba(25,9,34,0.99);
     background-repeat: no-repeat;
     height: inherit;
     background-size: cover;
-}
+}*/
 
 .zip-night {
     background: url("../img/Boston_night.jpg");
@@ -25,8 +45,8 @@ html, body {
 }
 
 .zip-map-header{
-    color: rgba(255, 94, 0, 0.99);
-    font-family: "Helvetica Neue";
+    color: rgb(252 188 52);
+    font-family: "Courier";
     font-size: 40px;
     text-shadow: #feff00;
     font-weight: bolder;
@@ -198,6 +218,11 @@ td.col1 {
     bottom: 200px;
 }
 
+.zip-leg-v{
+    position: relative;
+    top: 7%;
+}
+
 @media (max-width: 787px) {
     .zip-legend-vertical {
         display: none;
@@ -214,4 +239,8 @@ td.col1 {
     .zip-legend-horizontal {
         display: none;
     }
+}
+
+.vx-legend-label{
+    color: white;
 }

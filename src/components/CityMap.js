@@ -80,7 +80,7 @@ class CityMap extends Component {
     render() {
         /*109000*/
         const projection = geoMercator()
-            .scale(109000)
+            .scale(114000)
             .center([-71.12603188298199, 42.27158985153841 - 0.01])
             .translate([140, 375])
         const pathGenerator = geoPath().projection(projection)
@@ -102,7 +102,7 @@ class CityMap extends Component {
                             fill: this.props.hoverElement === d.properties.OBJECTID ?
                                 "#FCBC34" : this.props.colorScale(d.properties.ESTAB),
                             stroke: "black",
-                            strokeOpacity: 0.5
+                            strokeOpacity: 0.9
                         }}
                         className="countries"
                     />)
@@ -135,8 +135,8 @@ class CityMap extends Component {
                         </div>
                     </div>
                     <div className="col-4 col-md-3 col-lg-4 col-xl-4 zip-legend-vertical">
-                        <div className="mt-5 ">
-                            <p className="text-black font-weight-bolder mb-0">Number of Establishments</p>
+                        <div className="mt-5 zip-leg-v">
+                            <p className="text-white font-weight-bolder mb-0">Number of Establishments</p>
                             <LegendThreshold
                                 scale={this.props.colorScale}
                                 direction="column"
@@ -146,7 +146,7 @@ class CityMap extends Component {
                         </div>
                     </div>
                     <div className="zip-legend-horizontal">
-                        <p className="text-black font-weight-bolder zip-legend-text">Number of Establishments</p>
+                        <p className="text-white font-weight-bolder zip-legend-text">Number of Establishments</p>
                         <div className ="pl-4 pr-2">
                         <LegendThreshold
                             scale={this.props.colorScale}
