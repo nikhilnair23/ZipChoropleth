@@ -92,11 +92,11 @@ class CityMap extends Component {
                         onClick={() => this.redirect(d.properties.ZIP5)}
                         d={pathGenerator(d)}
                         onMouseEnter={(event) => {
-                            this.enableToolTip(event,d.properties.ZIP5);
+                            // this.enableToolTip(event,d.properties.ZIP5);
                             this.props.onHover(d);
                         }}
                         onMouseLeave={() => {
-                            this.disableToolTip();
+                            // this.disableToolTip();
                         }}
                         style={{
                             fill: this.props.hoverElement === d.properties.OBJECTID ?
