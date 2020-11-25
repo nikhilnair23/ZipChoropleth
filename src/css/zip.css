@@ -4,8 +4,8 @@ html, body {
 }
 
 body {
-    //background: linear-gradient(-45deg, #0044ce, #6e6b67);
-    background: rgba(0, 3, 55, 0.9);
+    /*background: linear-gradient(-45deg, #0044ce, #6e6b67);*/
+    background: rgb(0, 3, 17);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
@@ -168,7 +168,7 @@ body {
 .card {
     min-width: 400px;
     max-width: 400px;
-    border-radius: 50px;
+    border-radius: 13px;
     opacity: 0.9;
 }
 
